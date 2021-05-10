@@ -9,7 +9,7 @@ const Movies = ({ isMoviesPage, nominees, handleNomineeClick }) => {
   const [searchMovie, setSearchMovie] = useState("");
 
   const getMovieRequest = async (searchMovie) => {
-    const url = `https://www.omdbapi.com/?s=${searchMovie}&type=movie&apikey=986ccdbc`;
+    const url = `http://www.omdbapi.com/?s=${searchMovie}&type=movie&apikey=986ccdbc`;
     const response = await fetch(url);
     const jsonResponse = await response.json();
 

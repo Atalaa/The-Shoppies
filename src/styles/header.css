@@ -1,0 +1,26 @@
+.header {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
+  text-transform: uppercase;
+  background-color: #2980b9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vw;
+  padding: 10px 0;
+  box-shadow: 0px 1px 5px black;
+  color: white;
+  z-index: 100;
+}
+
+.header .banner {
+  text-transform: none;
+}
+
+@media (max-width: 1150px) {
+  .header {
+    font-size: 5vw;
+  }
+}
